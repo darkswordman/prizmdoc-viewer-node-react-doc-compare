@@ -80,7 +80,11 @@ const PrizmDocViewerWrapper = props => {
           }, {
             reason: '1.c'
           }]
-        }
+        },
+        uiElements: {
+          attachments: true                  // Enable the email attachments UI
+        },
+        attachmentViewingMode: "ThisViewer", // The email attachment will be opened in the same view
       });
 
       setViewerConstructed(true);

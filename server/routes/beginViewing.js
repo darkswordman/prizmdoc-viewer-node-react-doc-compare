@@ -26,7 +26,7 @@ router.post('/beginViewing', async (req, res /*, next*/) => {
   const document = req.query.document;
 
   // 1. Ask PAS to create a new viewing session.
-  prizmdocRes = await pas.post('/ViewingSession', { // See https://help.accusoft.com/PrizmDoc/v13.13/HTML/pas-viewing-sessions.html#post-viewingsession
+  prizmdocRes = await pas.post('/ViewingSession', { // See https://help.accusoft.com/PrizmDoc/latest/HTML/pas-viewing-sessions.html#post-viewingsession
     json: {
       source: {
         type: 'upload',
