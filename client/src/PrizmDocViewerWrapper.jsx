@@ -34,7 +34,7 @@ const PrizmDocViewerWrapper = props => {
         await Promise.all([
           injectScript(`${VIEWER_ASSETS_BASE_ROUTE}/js/viewercontrol.js`),
           injectScript(`${VIEWER_ASSETS_BASE_ROUTE}/js/viewerCustomizations.js`),
-          injectScript(`${VIEWER_ASSETS_BASE_ROUTE}/js/jquery-3.4.1.min.js`),
+          injectScript(`${VIEWER_ASSETS_BASE_ROUTE}/js/jquery-3.6.0.min.js`),
           injectScript(`${VIEWER_ASSETS_BASE_ROUTE}/js/underscore.min.js`),
           injectCss(`${VIEWER_ASSETS_BASE_ROUTE}/css/viewer.css`),
           injectCss(`${VIEWER_ASSETS_BASE_ROUTE}/css/normalize.min.css`),
