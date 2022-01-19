@@ -11,7 +11,7 @@ This sample shows you a simple way to contain the non-React PrizmDoc Viewer HTML
 
 ### Requirements
 
-- [Node.js](https://nodejs.org) 8 or higher
+- [Node.js](https://nodejs.org) 14+
 
 ### Configure Connection to PAS
 
@@ -33,7 +33,7 @@ For self-hosted PAS:
 ```json
 {
   "pasBaseUrl": "YOUR_PAS_BASE_URL",
-  "pasSecretKey": "YOUR_PAS_SECRET_KEY",
+  "pasSecretKey": "YOUR_PAS_SECRET_KEY"
 }
 ```
 
