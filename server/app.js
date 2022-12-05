@@ -9,6 +9,11 @@ const app = express();
 
 app.use(logger('dev'));
 
+app.use((req, res, next) => {
+  res.header('Content-Security-Policy', 'script-src \'self\'');
+  return next();
+});
+
 // Setup the proxy to PrizmDoc Application Services (PAS).
 // The viewer will send all of its requests for document content to the
 // /prizmdoc-applications-services route and the proxy will forward those requests

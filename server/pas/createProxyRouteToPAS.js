@@ -26,8 +26,7 @@ function createProxyRouteToPAS(path, pasBaseUrl, apiKey) {
     pathRewrite: pathRewrite,
     target: pasBaseUrl,
     changeOrigin: true, // necessary when converting from HTTP to HTTPS
-    headers,
-    logLevel: 'debug'
+    headers
   });
 }
 
