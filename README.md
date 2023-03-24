@@ -117,3 +117,10 @@ npm run build
 ```
 
 This will create production client-side assets in `client/build`.
+
+## Questions
+
+- How can we add a custom button (or any DOM element) into an existing viewer control node? We followed this guide https://help.accusoft.com/PrizmDoc/latest/HTML/add-a-custom-button.html but it didn't work.
+
+- How can we make the viewerControl object more reactive to UI changes? We can do this by creating a state variable and subscribing to events in a React effect hook. But this seems a bit complicated, there may be a better and easier way to do it.
+
